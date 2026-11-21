@@ -33,6 +33,7 @@ alias nc-listen="nc -lvnp 4444"
 ```
 
 # ターミナルセッションログの自動記録開始 (エビデンス保護)
+```
 script -a -f session_$(date +%Y%m%d_%H%M%S).log
 ```
 
