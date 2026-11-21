@@ -1,4 +1,5 @@
-# 🎮 ** Capture The Flag（CTF）**
+# Capture The Flag（CTF）
+
 CTF のジャンルごとのチートシート。
 
 ## 📘 [Root2Boot](https://github.com/5h1n6o/CTF/blob/main/Cheatsheet/Root2Boot/README.md)
