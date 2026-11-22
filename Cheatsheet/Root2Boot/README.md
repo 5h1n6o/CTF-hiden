@@ -207,6 +207,9 @@ ffuf -u http://$TARGET_IP/index.php -X POST -d "FUZZ=test" -w /usr/share/seclist
 # Gobuster: ディレクトリ列挙 (ステータスコード指定)
 gobuster dir -u http://$TARGET_IP/ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,txt,html,json -t 40 -s "200,204,301,302,307,401,403"
 
+# Gobuster: ディレクトリ列挙 (再帰的)
+gobuster dir -u http://$TARGET_IP/data -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -x php,txt,html,json -t 40 -s "200,204,301,302,307,401,403" -r
+
 # Gobuster: DNSサブドメインブルートフォース
 gobuster dns -d $DOMAIN -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -i
 
